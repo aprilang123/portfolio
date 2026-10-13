@@ -1,1 +1,74 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>April | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">april.</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="mailto:aprilang2003@gmail.com">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="work" class="work-section">
+      <div class="section-heading">
+        <h2>Selected Work<span class="dot">.</span></h2>
+        <p>A collection of things I've designed and built.</p>
+      </div>
+
+      <div class="filter-container">
+        <div class="filter-buttons">
+          
+          <button class="filter-btn active" data-filter="All">
+            All Projects
+          </button>
+          
+          <button class="filter-btn" data-filter="Design">
+            Design
+          </button>
+          
+          <button class="filter-btn" data-filter="Development">
+            Development
+          </button>
+        </div>
+
+        <select id="tool-filter" aria-label="Filter by tool">
+          <option value="All">All Tools</option>
+        </select>
+      </div>
+
+      <div id="project-grid" class="project-grid"></div>
+      <p id="empty-state" class="empty-state" hidden>
+        No projects match these filters.
+      </p>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>A little about me.</h2>
+      <p>
+        I'm a Computer Science fresh graduate interested in
+        UI/UX design, front-end development, and creating
+        intuitive digital products.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 April. Designed & built with care ♡</p>
+    <a href="https://github.com/aprilang123"
+       target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  </footer>
+
+</body>
+</html>
